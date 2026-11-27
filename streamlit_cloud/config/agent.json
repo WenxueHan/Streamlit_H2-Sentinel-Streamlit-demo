@@ -1,0 +1,29 @@
+{
+  "agent_id": "h2_diagnose_agent",
+  "name": "加氢报警诊断 Agent",
+  "model": {
+    "provider": "ascend",
+    "name": "qwen2.5-14b-instruct",
+    "temperature": 0.2
+  },
+  "prompt": "agent/prompts.py:SYSTEM_PROMPT",
+  "tools": [
+    "get_window",
+    "predict_quality",
+    "monitor_quality",
+    "detect_fault_type",
+    "route_detector",
+    "shap_explain",
+    "sca_label",
+    "diagnose_root",
+    "get_sop",
+    "parameter_sandbox",
+    "triage_alarms",
+    "build_report"
+  ],
+  "guardrails": {
+    "min_confidence": 0.6,
+    "read_only": true,
+    "max_tool_calls": 8
+  }
+}

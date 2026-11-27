@@ -1,0 +1,17 @@
+{
+  "workflow_id": "h2_alarm_flow",
+  "version": "1.0",
+  "nodes": [
+    {"id": "start", "type": "start"},
+    {"id": "window", "type": "tool", "tool": "get_window"},
+    {"id": "predict", "type": "tool", "tool": "predict_quality"},
+    {"id": "monitor", "type": "tool", "tool": "monitor_quality"},
+    {"id": "triage", "type": "tool", "tool": "triage_alarms", "optional": true},
+    {"id": "diagnose", "type": "agent", "agent": "h2_diagnose_agent"},
+    {"id": "report", "type": "tool", "tool": "build_report"},
+    {"id": "end", "type": "end"}
+  ],
+  "edges": [["start", "window"], ["window", "predict"], ["predict", "monitor"],
+            ["monitor", "triage"], ["triage", "diagnose"], ["diagnose", "report"],
+            ["report", "end"]]
+}

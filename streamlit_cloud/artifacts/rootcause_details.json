@@ -1,0 +1,2048 @@
+{
+  "R01-E01": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-03-04 00:56:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 117.99,
+        "delta": 144.07,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 47.82,
+        "delta": 51.16,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 34.85,
+        "delta": 153.58,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 32.6,
+        "delta": 127.57,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 13.17,
+        "delta": 41.21,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 12.79,
+        "delta": 10.54,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.69,
+        "delta": 1.16,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 0.39,
+        "delta": 0.52,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R01-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2025-03-10 01:02:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 537.53,
+        "delta": 550.85,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 19.62,
+        "delta": 29.79,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -17.21,
+        "delta": -19.96,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 2.96,
+        "delta": -1.54,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 2.28,
+        "delta": 3.4,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 1.71,
+        "delta": 2.06,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 1.7,
+        "delta": 0.34,
+        "role": "MV",
+        "label": "COMP"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.15,
+        "delta": 2.12,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R01-E05": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-03-12 00:34:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 183.45,
+        "delta": 221.36,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 171.47,
+        "delta": 301.3,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 128.68,
+        "delta": 279.98,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 69.61,
+        "delta": 74.29,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 16.14,
+        "delta": 28.74,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 12.64,
+        "delta": 37.37,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 4.86,
+        "delta": 9.85,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.79,
+        "delta": 1.92,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R01-E08": {
+    "fault_type": "amine",
+    "alarm_time": "2025-03-18 01:14:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 197.68,
+        "delta": 188.14,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 19.44,
+        "delta": 25.35,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 8.28,
+        "delta": 6.59,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": -4.93,
+        "delta": -16.62,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -3.45,
+        "delta": -17.56,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 2.39,
+        "delta": 2.33,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.23,
+        "delta": -0.97,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 0.59,
+        "delta": -1.13,
+        "role": "MV",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R01-E09": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-03-20 02:24:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 86.86,
+        "delta": 110.23,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -30.8,
+        "delta": 38.92,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 13.98,
+        "delta": 25.81,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 9.06,
+        "delta": 8.7,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 6.78,
+        "delta": 88.54,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 4.52,
+        "delta": 20.09,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 2.01,
+        "delta": -1.96,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.13,
+        "delta": 1.99,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R02-E01": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-05-03 00:58:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 125.65,
+        "delta": 160.09,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 53.72,
+        "delta": 57.62,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 23.1,
+        "delta": 138.08,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 17.0,
+        "delta": 118.35,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 14.02,
+        "delta": 13.5,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 11.22,
+        "delta": 38.72,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -3.55,
+        "delta": -5.82,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.48,
+        "delta": 0.83,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R02-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2025-05-09 01:03:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 525.64,
+        "delta": 541.89,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 20.41,
+        "delta": 30.49,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -19.33,
+        "delta": -26.87,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 11.91,
+        "delta": 13.9,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 2.78,
+        "delta": 2.96,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 1.54,
+        "delta": 0.45,
+        "role": "MV",
+        "label": "COMP"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 1.23,
+        "delta": -3.88,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.04,
+        "delta": 1.28,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R02-E05": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-05-11 00:36:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 178.63,
+        "delta": 214.89,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 174.61,
+        "delta": 314.8,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 124.01,
+        "delta": 277.31,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 73.34,
+        "delta": 77.97,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 17.08,
+        "delta": 26.95,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 12.92,
+        "delta": 40.17,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 8.45,
+        "delta": 15.46,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.47,
+        "delta": 0.63,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R02-E08": {
+    "fault_type": "amine",
+    "alarm_time": "2025-05-17 01:13:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 218.13,
+        "delta": 209.89,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 19.36,
+        "delta": 25.59,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -6.2,
+        "delta": -18.49,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 5.52,
+        "delta": 4.18,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 2.98,
+        "delta": 3.29,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": -2.83,
+        "delta": -13.34,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.3,
+        "delta": -2.98,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 0.97,
+        "delta": -1.13,
+        "role": "MV",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R02-E09": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-05-19 02:27:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 85.63,
+        "delta": 108.48,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -27.58,
+        "delta": 39.77,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 20.37,
+        "delta": 32.19,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 4.14,
+        "delta": 2.46,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 3.88,
+        "delta": 18.5,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 1.21,
+        "delta": -2.49,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.7,
+        "delta": 0.63,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -0.05,
+        "delta": 79.22,
+        "role": "PV",
+        "label": "INT"
+      }
+    ]
+  },
+  "R03-E01": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-07-02 00:54:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 125.78,
+        "delta": 155.78,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 57.77,
+        "delta": 62.64,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 39.97,
+        "delta": 157.95,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 36.11,
+        "delta": 133.98,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 12.52,
+        "delta": 38.18,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 11.64,
+        "delta": 10.35,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 6.06,
+        "delta": 9.06,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.54,
+        "delta": 2.25,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R03-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2025-07-08 01:00:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 547.42,
+        "delta": 566.06,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 22.75,
+        "delta": 34.19,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -19.07,
+        "delta": -22.14,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 5.27,
+        "delta": 6.17,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 3.59,
+        "delta": 1.86,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 3.13,
+        "delta": 2.49,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 2.38,
+        "delta": 1.85,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.1,
+        "delta": 0.99,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R03-E05": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-07-10 00:32:00",
+    "shap": [
+      {
+        "feature": "dt_ad",
+        "shap": 185.97,
+        "delta": 305.63,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 178.96,
+        "delta": 210.74,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 132.68,
+        "delta": 270.39,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 53.58,
+        "delta": 55.14,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 16.23,
+        "delta": 30.28,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 13.86,
+        "delta": 40.31,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 1.33,
+        "delta": 2.54,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.46,
+        "delta": 1.06,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R03-E08": {
+    "fault_type": "amine",
+    "alarm_time": "2025-07-16 01:17:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 195.79,
+        "delta": 186.97,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 15.99,
+        "delta": 21.47,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -7.72,
+        "delta": -23.6,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 6.67,
+        "delta": 5.67,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": -3.05,
+        "delta": -14.43,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -2.34,
+        "delta": -3.24,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 1.19,
+        "delta": -0.86,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.68,
+        "delta": 0.73,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R03-E09": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-07-18 02:18:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 84.94,
+        "delta": 105.03,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -27.44,
+        "delta": 40.18,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 16.72,
+        "delta": 28.48,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 6.16,
+        "delta": 5.77,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 5.22,
+        "delta": 21.14,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 1.16,
+        "delta": 85.39,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 0.9,
+        "delta": -4.9,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.75,
+        "delta": 0.16,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R04-E01": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-08-31 00:49:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 133.38,
+        "delta": 166.19,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 49.91,
+        "delta": 52.43,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 47.69,
+        "delta": 143.67,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 42.63,
+        "delta": 129.85,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 13.79,
+        "delta": 17.07,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 9.94,
+        "delta": 31.6,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -1.84,
+        "delta": -3.91,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.9,
+        "delta": 2.54,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R04-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2025-09-06 00:52:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 557.12,
+        "delta": 581.07,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 28.17,
+        "delta": 39.11,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -22.54,
+        "delta": -26.37,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 13.24,
+        "delta": 16.02,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 3.19,
+        "delta": 2.19,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 2.7,
+        "delta": 2.06,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.83,
+        "delta": -0.88,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 0.6,
+        "delta": -0.14,
+        "role": "MV",
+        "label": "COMP"
+      }
+    ]
+  },
+  "R04-E05": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-09-08 00:24:00",
+    "shap": [
+      {
+        "feature": "dt_ad",
+        "shap": 229.38,
+        "delta": 323.42,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 192.68,
+        "delta": 224.89,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 154.86,
+        "delta": 281.66,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 47.19,
+        "delta": 50.84,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 16.0,
+        "delta": 40.79,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 12.28,
+        "delta": 26.97,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 8.72,
+        "delta": 16.98,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 1.29,
+        "delta": 3.18,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R04-E08": {
+    "fault_type": "amine",
+    "alarm_time": "2025-09-14 01:10:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 214.46,
+        "delta": 211.04,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 20.42,
+        "delta": 26.65,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -8.72,
+        "delta": -17.78,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": -2.83,
+        "delta": -11.43,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 2.63,
+        "delta": 2.84,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.07,
+        "delta": -0.74,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 0.47,
+        "delta": -0.39,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 0.03,
+        "delta": 1.1,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R04-E09": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-09-16 02:21:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 85.06,
+        "delta": 106.7,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -28.8,
+        "delta": 39.14,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 16.01,
+        "delta": 29.29,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 9.7,
+        "delta": 9.83,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 4.74,
+        "delta": 19.37,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.7,
+        "delta": 0.91,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 0.65,
+        "delta": -4.5,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -0.23,
+        "delta": 83.25,
+        "role": "PV",
+        "label": "INT"
+      }
+    ]
+  },
+  "R05-E01": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-10-30 00:50:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 129.85,
+        "delta": 161.13,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 55.39,
+        "delta": 61.77,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 45.33,
+        "delta": 154.59,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 39.66,
+        "delta": 133.72,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 12.37,
+        "delta": 13.31,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 10.59,
+        "delta": 32.41,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 8.49,
+        "delta": 14.02,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 1.07,
+        "delta": 4.39,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R05-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2025-11-05 00:53:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 550.07,
+        "delta": 572.14,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 25.93,
+        "delta": 37.71,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -19.05,
+        "delta": -18.52,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 5.34,
+        "delta": 6.7,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 1.27,
+        "delta": 1.15,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 1.25,
+        "delta": 5.81,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -0.39,
+        "delta": -0.68,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -0.13,
+        "delta": 0.33,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R05-E05": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-11-07 00:24:00",
+    "shap": [
+      {
+        "feature": "dt_ad",
+        "shap": 236.65,
+        "delta": 314.71,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 186.8,
+        "delta": 209.8,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 154.39,
+        "delta": 264.57,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 39.95,
+        "delta": 39.63,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 16.6,
+        "delta": 42.85,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 14.76,
+        "delta": 34.71,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -10.33,
+        "delta": -18.38,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 1.92,
+        "delta": 5.19,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R05-E08": {
+    "fault_type": "amine",
+    "alarm_time": "2025-11-13 01:11:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 192.8,
+        "delta": 180.42,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 18.22,
+        "delta": 23.54,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": -10.1,
+        "delta": -23.25,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": -4.15,
+        "delta": -15.27,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 2.7,
+        "delta": 0.15,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.81,
+        "delta": -1.95,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 1.4,
+        "delta": 0.77,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 0.53,
+        "delta": -1.02,
+        "role": "MV",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R05-E09": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2025-11-15 02:22:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 84.47,
+        "delta": 105.1,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -26.0,
+        "delta": 40.78,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 22.31,
+        "delta": 34.25,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 8.01,
+        "delta": 7.28,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 4.99,
+        "delta": 87.42,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 4.87,
+        "delta": 20.59,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.36,
+        "delta": -0.57,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 0.18,
+        "delta": -4.43,
+        "role": "PV",
+        "label": "INT"
+      }
+    ]
+  },
+  "R06-E01": {
+    "fault_type": "deactivation",
+    "alarm_time": "2026-01-05 22:57:00",
+    "shap": [
+      {
+        "feature": "dt_ad",
+        "shap": 48.45,
+        "delta": 56.97,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 15.29,
+        "delta": 22.17,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 13.21,
+        "delta": 10.48,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 10.86,
+        "delta": 14.43,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 6.98,
+        "delta": 12.35,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -4.02,
+        "delta": -2.02,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 2.49,
+        "delta": 3.1,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.53,
+        "delta": -1.65,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R07-E01": {
+    "fault_type": "deactivation",
+    "alarm_time": "2026-03-06 21:58:00",
+    "shap": [
+      {
+        "feature": "dt_ad",
+        "shap": 46.93,
+        "delta": 56.02,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 15.64,
+        "delta": 24.92,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 12.7,
+        "delta": 8.86,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -9.51,
+        "delta": -7.87,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 5.57,
+        "delta": 10.85,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 2.62,
+        "delta": 3.5,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -2.0,
+        "delta": 1.67,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.76,
+        "delta": -1.93,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R08-E01": {
+    "fault_type": "deactivation",
+    "alarm_time": "2026-05-01 00:25:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 136.94,
+        "delta": 159.68,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 134.49,
+        "delta": 182.81,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 100.2,
+        "delta": 150.02,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 24.47,
+        "delta": 25.76,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 10.77,
+        "delta": 22.36,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 5.72,
+        "delta": 14.73,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -0.29,
+        "delta": -0.25,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.17,
+        "delta": 1.77,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R08-E02": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2026-05-01 00:25:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 136.94,
+        "delta": 159.68,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 134.49,
+        "delta": 182.81,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 100.2,
+        "delta": 150.02,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 24.47,
+        "delta": 25.76,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 10.77,
+        "delta": 22.36,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 5.72,
+        "delta": 14.73,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -0.29,
+        "delta": -0.25,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": 0.17,
+        "delta": 1.77,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R08-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2026-05-04 00:25:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 142.39,
+        "delta": 152.69,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 35.26,
+        "delta": 39.92,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 18.48,
+        "delta": 17.95,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 13.23,
+        "delta": 18.67,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": -5.1,
+        "delta": -2.06,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -2.28,
+        "delta": -2.01,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 1.99,
+        "delta": 2.17,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": -1.61,
+        "delta": -1.36,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R09-E01": {
+    "fault_type": "deactivation",
+    "alarm_time": "2026-06-30 00:31:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 128.67,
+        "delta": 152.31,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 113.53,
+        "delta": 175.19,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 89.9,
+        "delta": 145.95,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 33.46,
+        "delta": 34.79,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 11.1,
+        "delta": 18.27,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 6.67,
+        "delta": 18.49,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 2.66,
+        "delta": 3.16,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.25,
+        "delta": 3.06,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R09-E02": {
+    "fault_type": "feed_sulfur",
+    "alarm_time": "2026-06-30 00:31:00",
+    "shap": [
+      {
+        "feature": "t_in",
+        "shap": 128.67,
+        "delta": 152.31,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 113.53,
+        "delta": 175.19,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 89.9,
+        "delta": 145.95,
+        "role": "EXO",
+        "label": "ROOT"
+      },
+      {
+        "feature": "recycle_h2s",
+        "shap": 33.46,
+        "delta": 34.79,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 11.1,
+        "delta": 18.27,
+        "role": "PV",
+        "label": "INT"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 6.67,
+        "delta": 18.49,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 2.66,
+        "delta": 3.16,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -0.25,
+        "delta": 3.06,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      }
+    ]
+  },
+  "R09-E04": {
+    "fault_type": "amine",
+    "alarm_time": "2026-07-03 00:26:00",
+    "shap": [
+      {
+        "feature": "recycle_h2s",
+        "shap": 146.97,
+        "delta": 156.25,
+        "role": "INT",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "dt_ad",
+        "shap": 33.88,
+        "delta": 38.4,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_in",
+        "shap": 17.8,
+        "delta": 18.0,
+        "role": "MV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "t_bed",
+        "shap": 11.24,
+        "delta": 15.85,
+        "role": "PV",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_sulfur_analyzer",
+        "shap": 5.17,
+        "delta": 8.22,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "feed_flow",
+        "shap": 1.99,
+        "delta": 1.28,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "p_h2",
+        "shap": -1.66,
+        "delta": -1.05,
+        "role": "EXO",
+        "label": "NEUTRAL"
+      },
+      {
+        "feature": "fuel_valve",
+        "shap": 1.57,
+        "delta": 1.64,
+        "role": "MV",
+        "label": "NEUTRAL"
+      }
+    ]
+  }
+}
