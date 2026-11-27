@@ -95,6 +95,36 @@ def _extract_json(text):
     return None
 
 
+def _sanitize_answer(parsed, local):
+    """Guarantee a dict with the keys the Streamlit UI expects."""
+    if not isinstance(parsed, dict):
+        parsed = {"conclusion": str(parsed)}
+    if isinstance(parsed.get("answer"), dict):
+        parsed = parsed["answer"]
+    conclusion = parsed.get("conclusion", parsed.get("answer", ""))
+    if not isinstance(conclusion, str):
+        conclusion = json.dumps(conclusion, ensure_ascii=False)
+    root = parsed.get("root_cause", parsed.get("top1"))
+    if root is None:
+        root = local.get("top1", "unknown")
+    actions = parsed.get("actions", [])
+    if isinstance(actions, dict):
+        actions = [{"step": k, "role": "", "risk": ""} for k in actions]
+    if not isinstance(actions, list):
+        actions = []
+    try:
+        confidence = float(parsed.get("confidence", local.get("confidence", 0.0)) or 0.0)
+    except Exception:
+        confidence = 0.0
+    return {
+        "conclusion": conclusion,
+        "root_cause": str(root),
+        "confidence": confidence,
+        "actions": actions,
+        "refuse": bool(parsed.get("refuse", False)),
+    }
+
+
 def diagnose_with_evidence(ev, api_key="", base_url="https://api.deepseek.com/v1",
                            model="deepseek-chat", query="为什么报警？给出根因和处置建议。"):
     local = ev.get("local_rule", {})
@@ -123,6 +153,7 @@ def diagnose_with_evidence(ev, api_key="", base_url="https://api.deepseek.com/v1
     parsed = _extract_json(content) or {"conclusion": content, "root_cause": local.get("top1"),
                                         "confidence": local.get("confidence", 0.0),
                                         "actions": local.get("actions", []), "refuse": False}
+    parsed = _sanitize_answer(parsed, local)
     return {"mode": "deepseek", "model": data.get("model", model),
             "answer": parsed, "evidence": ev}
 

@@ -557,6 +557,8 @@ def live():
                 st.warning("当前显示的是事件 %s 的结果；请点“运行 Agent 诊断”重新分析 %s。" % (
                     old_eid, row["event_id"]))
             a = r.get("answer", {})
+            if not isinstance(a, dict):
+                a = {"conclusion": str(a)}
             mode = r.get("mode", "local_rule")
             badge = {"deepseek": "DeepSeek", "openjiuwen": "OPENJIUWEN",
                      "local_rule": "LOCAL RULE"}.get(mode, "ERROR")
@@ -565,7 +567,12 @@ def live():
             st.markdown("**结论**：%s" % a.get("conclusion", "-"))
             st.markdown("**根因**：`%s`　**置信度**：%.3f" % (
                 a.get("root_cause", "-"), float(a.get("confidence", 0) or 0)))
-            for i, act in enumerate(a.get("actions", [])[:5], 1):
+            acts = a.get("actions", [])
+            if isinstance(acts, dict):
+                acts = [{"step": k, "role": ""} for k in acts]
+            if not isinstance(acts, list):
+                acts = []
+            for i, act in enumerate(acts[:5], 1):
                 if isinstance(act, dict):
                     st.markdown("%d. %s（%s）" % (i, act.get("step", ""), act.get("role", "")))
                 else:
@@ -574,9 +581,15 @@ def live():
                 st.warning("证据不足，Agent 建议转人工确认。")
             if r.get("openjiuwen_note"):
                 st.caption(r["openjiuwen_note"])
-            sc = shap_chart(r.get("evidence", {}))
-            if sc is not None:
-                st.altair_chart(sc, width="stretch")
+            evd = r.get("evidence", {})
+            if not isinstance(evd, dict):
+                evd = {}
+            try:
+                sc = shap_chart(evd)
+                if sc is not None:
+                    st.altair_chart(sc, width="stretch")
+            except Exception as exc:
+                st.caption("SHAP 图暂不可用：%s" % exc)
         st.markdown("</div>", unsafe_allow_html=True)
 
     event_pos = idx - seg_start + 1
