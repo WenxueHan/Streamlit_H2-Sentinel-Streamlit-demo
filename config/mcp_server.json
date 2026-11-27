@@ -1,0 +1,10 @@
+{
+  "server_name": "h2-tools",
+  "server_path": "tools/mcp_server.py",
+  "client_type": "stdio",
+  "params": {"python": "python3.11", "timeout": 30},
+  "auth_headers": {},
+  "tools": ["get_window", "predict_quality", "monitor_quality", "route_detector",
+            "shap_explain", "sca_label", "diagnose_root", "get_sop",
+            "triage_alarms", "build_report"]
+}

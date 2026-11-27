@@ -1,0 +1,163 @@
+{
+  "feed_sulfur": {
+    "name": "上游原料硫阶跃",
+    "expected": {
+      "feed_sulfur_analyzer": 1,
+      "sulfur_analyzer": 1,
+      "dt_ad": 1,
+      "t_in": 1,
+      "p_h2": 0,
+      "recycle_h2s": 0,
+      "fuel_valve": 1,
+      "feed_flow": 0
+    },
+    "weights": {
+      "feed_sulfur_analyzer": 4.0,
+      "sulfur_analyzer": 1.5,
+      "dt_ad": 1.0,
+      "t_in": 0.5
+    },
+    "key": ["feed_sulfur_analyzer"],
+    "mechanism": "进料硫升高，在活性与氢分压不变时脱硫率下降，出口硫上升；脱硫放热增加使床层温升上升，床温 PID 会小幅提温补偿。",
+    "sop": [
+      "核实原料罐切换、上游装置波动与原料硫分析仪/化验值",
+      "评估是否提高反应温度或适当降低处理量",
+      "关注床层温升与循环氢 H2S，防止飞温与深度脱硫不足",
+      "必要时调整下游 FCC 进料或产品去向"
+    ],
+    "contradictions": [
+      "循环氢 H2S 显著上升更支持胺洗失效",
+      "氢分压显著下降更支持氢分压故障"
+    ]
+  },
+  "amine": {
+    "name": "胺洗单元失效",
+    "expected": {
+      "recycle_h2s": 1,
+      "sulfur_analyzer": 1,
+      "t_in": 1,
+      "dt_ad": -1,
+      "feed_sulfur_analyzer": 0,
+      "p_h2": 0
+    },
+    "weights": {
+      "recycle_h2s": 4.0,
+      "sulfur_analyzer": 1.5,
+      "t_in": 0.5,
+      "dt_ad": 0.5
+    },
+    "key": ["recycle_h2s"],
+    "mechanism": "胺洗效率下降使循环氢 H2S 累积，H2S 竞争吸附抑制 HDS 活性，出口硫上升；为维持转化率，床温 PID 提温，入口温度上升。",
+    "sop": [
+      "检查胺液浓度、贫液温度、胺洗塔压差与发泡情况",
+      "核对循环氢 H2S 分析仪与化验值",
+      "评估提高胺液循环量或补充新鲜胺液",
+      "若 H2S 持续上升，适当提温并关注氢分压"
+    ],
+    "contradictions": [
+      "原料硫显著上升更支持上游硫阶跃",
+      "氢分压显著下降更支持氢分压故障"
+    ]
+  },
+  "deactivation": {
+    "name": "催化剂缓慢失活",
+    "expected": {
+      "dt_ad": -1,
+      "t_in": 1,
+      "sulfur_analyzer": 1,
+      "feed_sulfur_analyzer": 0,
+      "recycle_h2s": 0,
+      "p_h2": 0
+    },
+    "weights": {
+      "dt_ad": 4.0,
+      "t_in": 1.5,
+      "sulfur_analyzer": 1.0
+    },
+    "key": ["dt_ad"],
+    "mechanism": "催化剂活性下降使脱硫率下降、放热减少，床层温升下降；床温 PID 提温补偿，入口温度缓慢上升，出口硫缓慢上升。",
+    "sop": [
+      "核对催化剂运行时间、提温曲线与设计寿命",
+      "检查原料金属/残炭/干点是否异常，排除中毒与结焦",
+      "评估提温上限与循环氢纯度，制定换剂或再生计划",
+      "加强出口硫与床层温升趋势监控"
+    ],
+    "contradictions": [
+      "原料硫同步大幅上升更支持上游硫阶跃",
+      "循环氢 H2S 大幅上升更支持胺洗失效"
+    ]
+  },
+  "furnace": {
+    "name": "加热炉/供热异常",
+    "expected": {
+      "fuel_valve": 1,
+      "t_bed": -1,
+      "t_in": -1,
+      "sulfur_analyzer": 1,
+      "dt_ad": -1,
+      "feed_sulfur_analyzer": 0
+    },
+    "weights": {
+      "fuel_valve": 3.0,
+      "t_bed": 2.0,
+      "t_in": 1.5,
+      "sulfur_analyzer": 1.0
+    },
+    "key": ["fuel_valve", "t_in"],
+    "mechanism": "加热炉供热能力下降，炉出口温度达不到设定，床层温度下降，脱硫率下降，出口硫上升；燃料气阀开大甚至饱和。",
+    "sop": [
+      "检查燃料气压力、热值与烧嘴结焦情况",
+      "核对炉出口温度与床层温度偏差",
+      "评估是否降低处理量或切换备用炉",
+      "关注阀位饱和与提温余量"
+    ],
+    "contradictions": [
+      "原料硫大幅上升更支持上游硫阶跃",
+      "循环氢 H2S 大幅上升更支持胺洗失效"
+    ]
+  },
+  "h2_pressure": {
+    "name": "氢分压下降",
+    "expected": {
+      "p_h2": -1,
+      "sulfur_analyzer": 1,
+      "t_in": 1,
+      "fuel_valve": 1,
+      "recycle_h2s": 0,
+      "feed_sulfur_analyzer": 0
+    },
+    "weights": {
+      "p_h2": 4.0,
+      "sulfur_analyzer": 1.0,
+      "t_in": 0.5
+    },
+    "key": ["p_h2"],
+    "mechanism": "氢分压下降降低加氢反应速率，出口硫上升；为维持转化率，床温 PID 提温。",
+    "sop": [
+      "检查新氢压缩机、补充氢流量与系统压力",
+      "核对氢油比与循环氢纯度",
+      "评估提高补充氢量或降低处理量",
+      "关注氢分压恢复后的床层温升"
+    ],
+    "contradictions": [
+      "循环氢 H2S 大幅上升更支持胺洗失效",
+      "原料硫大幅上升更支持上游硫阶跃"
+    ]
+  },
+  "instrument": {
+    "name": "仪表测量异常",
+    "expected": {},
+    "weights": {},
+    "key": ["sulfur_analyzer"],
+    "mechanism": "硫分析仪冻结、漂移或尖峰，测量值与工艺机理、冗余测点不一致。",
+    "sop": [
+      "检查分析仪取样系统、标定与伴热",
+      "用化验值与软测量交叉验证",
+      "切至备用分析仪或手动化验",
+      "对该时段报警做搁置/降级处理"
+    ],
+    "contradictions": [
+      "若工艺变量同步异常，应优先排查工艺故障而非仪表"
+    ]
+  }
+}
